@@ -156,5 +156,6 @@ function calcScore(){
 		console.log('Activate Hints!');
 	});
 	
+console.log('end');
 
 });

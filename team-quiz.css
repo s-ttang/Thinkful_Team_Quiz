@@ -39,6 +39,7 @@ header{
 		background-size: 	 100% 100%;
   		background-position: 0 0;
 		margin: 9px auto;
+		vertical-align: top;
 	}
 	h1, h2, h3, h4, input, p{
 		text-align: center;
@@ -53,6 +54,8 @@ header{
 		line-height: 72px;
 		color:	 	#232C30;
 		letter-spacing: -2px;
+		vertical-align: top;
+		margin-left: 10px;
 	}
 	h2{
 		width: 		600px;
@@ -80,6 +83,7 @@ header{
 		width: 	350px;
 		height: 400px;
 		margin: 30px 0 0 20px;
+		vertical-align: top;
 	}
 	.choices{
 	}
@@ -160,13 +164,13 @@ header{
 	top: -200px;
 }
 .hints, div.wrap{
-
 	-webkit-transition: top 500ms ease-out ;
     -moz-transition: top  500ms ease-out ;
     -o-transition: top 500ms ease-out ;
     transition: top 500ms ease-out ;
 }
 	.original{
+		position: relative;
 		display: 	inline-block;
 		width: 		140px;
 		height: 	150px;
