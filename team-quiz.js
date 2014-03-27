@@ -76,8 +76,8 @@ function checkGuess(guess){
 	}	
 		$('.feedback p').text('You guessed ' + guess);
 		$('.feedback h4').text(result).css('color', color);
-		$('.choices').hide();
-		$('.feedback').show();
+		$('.choices').css('display', 'none');
+		$('.feedback').css("display", "inline-block");;
 		questionNum ++;
 		console.log('check!' + guess + ans );
 }
@@ -88,14 +88,16 @@ function replayGame(){
 		gameState		= 'play';
 		updateQuestionPhoto();
 		updateChoices();
-		$('.question').show();
-		$('.feedback').hide();
+		$('.question').css("display", "inline-block");
+		$('.spacer').css('display', 'none')
+		$('.feedback').css('display', 'none');
 		$('.feedback-btn').text('Next');
-		$('.choices').show();
+		$('.choices').css("display", "inline-block");
 }
 function endGame(){
 		gameState = 'finished';
-		$('.question').hide();
+		$('.question').css('display', 'none');
+		$('.spacer').css("display", "inline-block");
 		$('.feedback p').text("You answered " + numCorrect + " out of " + maxQuestions);
 		calcScore();
 		$('.feedback h4').text(grade).css('color', color);
@@ -131,9 +133,9 @@ function calcScore(){
 			console.log('replay');
 		} else if (questionNum <= maxQuestions){
 			updateQuestionPhoto();
-			$('.feedback').hide();
+			$('.feedback').css('display', 'none');
 			updateChoices();
-			$('.choices').show();
+			$('.choices').css("display", "inline-block");
 		} else	{
 			endGame();
 		}
