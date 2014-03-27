@@ -28,27 +28,28 @@ header{
 	margin-top: 10px;
 }
 	header div.wrapper{
-		width: 410px;
-		height: 72px;
+		width: 475px;
+		height: 80px;
 	}
 	header div.logo{
-		width: 200px;
-		height: 72px;
+		width: 244px;
+		height: 52px;
 		display: inline-block;
 		background: url('TF_logo.svg') no-repeat;
 		background-size: 	 100% 100%;
   		background-position: 0 0;
-
-
-		margin: 0 auto;
+		margin: 9px auto;
 	}
 	h1, h2, h3, h4, input, p{
 		text-align: center;
 	}
-	h1{		
-		font-family: 'Open Sans', sans-serif;
+	h1{	
+		width: 215px;
+		height: 72px;	
+		display: inline-block;
+		font-family: sans-serif;
 		font-weight: 700;
-		font-size:	 50px;
+		font-size:	 60px;
 		line-height: 72px;
 		color:	 	#232C30;
 		letter-spacing: -2px;
@@ -140,7 +141,7 @@ header{
 			height: 70px;
 			margin-top: 60px;
 			padding: 5px 15px;
-			font: 36px/36px 'Open sans', sans-serif;
+			font: 36px/36px sans-serif;
 			color: #fff;
 			background: #232C30;
 			border: #fff 3px solid;
