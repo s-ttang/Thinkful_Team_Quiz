@@ -1,0 +1,217 @@
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background:0 0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+/* Eric Meyer reset 2007*/a,abbr,acronym,address,applet,big,blockquote,body,caption,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,font,form,h1,h2,h3,h4,h5,h6,html,iframe,img,ins,kbd,label,legend,li,object,ol,p,pre,q,s,samp,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,tt,ul,var{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline}:focus{outline:0}body{line-height:1;color:#000;background:#fff}ol,ul{list-style:none}table{border-collapse:separate;border-spacing:0}caption,td,th{text-align:left;font-weight:400}blockquote:after,blockquote:before,q:after,q:before{content:""}blockquote,q{quotes:"" ""}
+
+.float-left	{float: left;}
+.float-right{float: right;}
+.clear		{clear: both;}
+.wrapper	{margin: 0 auto;}
+html, body{
+	height: 100%;
+  	margin:  0;	
+  	padding: 0;
+  	border:  0;
+}
+
+#container{
+	position:	relative;
+	margin: 	0 auto;	
+	min-width: 	1120px; 
+	height: 	100%;
+	text-align: center;
+ 		
+	background: #F1F1F1F1;
+
+}
+header{
+	width: 100%;
+	height: 120px;
+	margin-top: 10px;
+}
+	header div.wrapper{
+		width: 410px;
+		height: 72px;
+	}
+	header div.logo{
+		width: 200px;
+		height: 72px;
+		display: inline-block;
+		background: url('TF_logo.svg') no-repeat;
+		background-size: 	 100% 100%;
+  		background-position: 0 0;
+
+
+		margin: 0 auto;
+	}
+	h1, h2, h3, h4, input, p{
+		text-align: center;
+	}
+	h1{		
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 700;
+		font-size:	 50px;
+		line-height: 72px;
+		color:	 	#232C30;
+		letter-spacing: -2px;
+	}
+	h2{
+		width: 		600px;
+		margin: 	0 auto;
+		font: 	 	24px/36px Arial, Helvetica, sans-serif;
+		color:	 	#333;
+	}
+.quiz-bg{
+	position: relative;
+	width: 		100%;
+	height: 	450px;
+	background: rgb(35, 44, 48);
+	z-index: 2;
+}	
+.quiz{
+	position: 	relative;
+	width: 		750px;
+	height: 	450px;
+	margin: 	0 auto;
+	z-index: 	100;
+}
+	.question, .choices, .feedback{
+		display: inline-block;
+		position: relative;
+		width: 	350px;
+		height: 400px;
+		margin: 30px 0 0 20px;
+	}
+	.choices{
+	}
+	.feedback{
+		display: none;
+	}
+		.question h3{
+			font: 	36px/54px Arial, sans-serif;
+			color: #fff;
+		}
+		.question .photo{
+			position: 	relative;
+			border: 	5px solid #222;
+			border-radius: 	  10px;
+			background-position: 0 0;
+		}
+		.question .facemorph{
+			width: 		295px;	
+			height: 	300px;
+			margin:		7px auto;
+			background-image: url('Thinkful_Team_Mashup.png');
+			/*
+			background-image: url('https://dl.dropboxusercontent.com/u/15931036/Thinkful/quiz-app/Thinkful_Team_Quiz/Thinkful_Team_Mashup.png'); 
+			*/
+		}
+		.choices input{
+			position: relative;
+			width: 		350px;
+			height: 	70px;
+			margin: 	10px 0 0 0;
+			padding: 	5px 15px;
+			font: 		24px/36px  Arial, sans-serif;
+			color: 		#232C30;
+			letter-spacing: 2px;
+			background: 	rgba(255, 255, 255, 0.9);
+			border: 		3px solid #fff;
+			border-radius: 	3px;
+		}
+		.choices input:first-child{
+			margin-top: 60px;
+		}
+		.choices input:hover{
+			background: #F23319;
+		}
+		.feedback p{
+			font: 24px/36px Arial, sans-serif;
+			color: #fff;
+			border: 1px;
+			margin-top: 70px;
+			letter-spacing: 1px;
+		}
+		.feedback h4{
+			font: 48px/72px Arial, sans-serif;
+			border: 1px;
+			margin-top: 60px;
+		}
+		.feedback-btn{
+			width: 350px;
+			height: 70px;
+			margin-top: 60px;
+			padding: 5px 15px;
+			font: 36px/36px 'Open sans', sans-serif;
+			color: #fff;
+			background: #232C30;
+			border: #fff 3px solid;
+			border-radius: 5px;
+		}
+			.feedback-btn:hover{
+				color: #232C30;
+				background: #fff;
+			}
+.hints{
+	position: 	relative;
+	z-index: 	1;
+	width: 		100%;
+	height:	 	200px;
+	background: rgb(85, 110, 125);
+	top: -200px;
+}
+.hints, div.wrap{
+
+	-webkit-transition: top 500ms ease-out ;
+    -moz-transition: top  500ms ease-out ;
+    -o-transition: top 500ms ease-out ;
+    transition: top 500ms ease-out ;
+}
+	.original{
+		display: 	inline-block;
+		width: 		140px;
+		height: 	150px;
+		margin: 	20px 5px;
+		background-image: url('Thinkful_Team_Photos.png');
+	}
+	.original:nth-child(1){
+		background-position: -150px 0;
+	}
+	.original:nth-child(2){
+		background-position: -300px 0;
+	}
+	.original:nth-child(3){
+		background-position: -450px 0;
+	}
+	.original:nth-child(4){
+		background-position: -600px 0;
+	}
+	.original:nth-child(5){
+		background-position: -750px 0;
+	}
+	div.hints div.wrapper{
+		width: 770px;
+		height:200px;
+	}
+div.wrap{
+	position: relative;
+	width: 300px;
+	height: 50px;
+	margin: 0 auto;
+	top: -200px;
+}
+
+	.hint-btn{
+		width: 300px;
+		height: 50px;
+		margin: -2px auto;
+		padding: 0;
+		background: rgb(85, 110, 125);
+		border-bottom-left-radius:  10px;
+		border-bottom-right-radius: 10px;
+		
+		font: 20px / 32px Arial, sans-serif;
+		color: #fff;
+		letter-spacing: 3px;
+	}
+		.hint-btn:hover{
+			background: #232C30;
+		}

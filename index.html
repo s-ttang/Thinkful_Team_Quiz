@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Thinkful Mashup</title>
+		<meta charset="utf-8"/>
+		<meta name="description" content="How well do you know your Thinkful teammates?">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+		<link href="team-quiz.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class='wrapper'>
+					<div class='logo'></div>
+					<h1 class='float-right'> Mashup </h1>
+				</div>
+				<h2> How well do you know your teammate? </h2>
+			</header>
+			<div class="quiz-bg">
+				<div class="quiz">
+					<div class='question'>
+						<h3>Who is this ?</h3>
+						<div class="facemorph photo"></div>
+					</div>
+					<div class='choices float-right'>
+						<input class="choice" type="button" name="choice" value="Carrell">
+						<input class="choice" type="button" name="choice" value="Marrell">
+						<input class="choice" type="button" name="choice" value="Grarrell">
+						<input class="choice" type="button" name="choice" value="Saurrell">
+					</div>
+					<div class='feedback float-right'>
+						<p> You guessed Sarrell</p>
+						<h4> Correct! </h4>
+						<button class='feedback-btn'> Next </button>
+					</div>
+				</div>
+			</div>
+			<div class='hints'>
+				<div class='wrapper'>
+					<div class='original photo'></div>
+					<div class='original photo'></div>
+					<div class='original photo'></div>
+					<div class='original photo'></div>
+					<div class='original photo'></div>
+				</div>
+			</div>
+			<div class='wrap'>
+				<button class='hint-btn'>Show Hints</button>
+			</div>
+		</div>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="team-quiz.js" type"text/javascript"></script>
+</html>
